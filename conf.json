@@ -3,7 +3,7 @@
         {
             "name": "Desk",
             "code": "00000",
-            "id": "00100",
+            "id": "10000",
             "groups": "Gruppe A&Gruppe B"
         },
         {
@@ -13,20 +13,15 @@
             "groups": "Gruppe A"
         },
         {
-            "name": "Plant",
+            "name": "Piano",
             "code": "00000",
-            "id": "10000",
+            "id": "00100",
             "groups": ""
         },
         {
-            "name": "12498710487",
-            "code": "code",
-            "id": "00NaN"
-        },
-        {
-            "name": "12498710487",
-            "code": "code",
-            "id": "1101111"
+            "name": "Yuccapalme",
+            "code": "00000",
+            "id": "01000"
         }
     ],
     "default_lights": [

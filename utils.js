@@ -22,7 +22,7 @@ exports.handleQuery = function (slug, callback) {
             return callback(null);
         } else {
             try {
-                shell.exec('/home/lukas/433Utils/RPi_utils/send ' + code + ' ' + id + ' ' + value + ' 500');
+                shell.exec('./RPi_utils/send ' + code + ' ' + id + ' ' + value + ' 500');
                 return callback(null);
             } catch (e) {
                 return callback(e);
