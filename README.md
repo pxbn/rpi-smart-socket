@@ -1,4 +1,5 @@
-# Reset conf to backup_conf.json
+# How to use http to communicate with the server
+## Reset conf to backup_conf.json
 
 If you want to reset your configuration file with the backup_conf.json simply query the following:
 
@@ -6,7 +7,7 @@ If you want to reset your configuration file with the backup_conf.json simply qu
 
 
 
-# Retrieve request
+## Retrieve request
 
 If you want to retrieve the conf.json send a request with the following syntax (a stand for action and r for retrive):
 
@@ -14,7 +15,7 @@ If you want to retrieve the conf.json send a request with the following syntax (
 
 
 
-# Add light request
+## Add light request
 
 If you want to add a light to the server conf.json you have to send the following request (the action al stands for add light):
 
@@ -22,7 +23,7 @@ If you want to add a light to the server conf.json you have to send the followin
 
 - The ID has to be in decimal representation, the server converts it to binary internally
 
-# Remove light request
+## Remove light request
 
 If you want to remova a light from the server conf.json, send the following command (rl=remove light):
 
@@ -30,7 +31,7 @@ If you want to remova a light from the server conf.json, send the following comm
 
 - The ID here is the binary representation
 
-# Add group to light
+## Add group to light
 
 If you want to add a group to the `lights[i].groups` string send the following url request (ag = add group):
 
@@ -41,7 +42,7 @@ If you want to add a group to the `lights[i].groups` string send the following u
 
 
 
-# Switch light
+## Switch light
 
 Switching a remote plug works with a requests to a data path aswell.
 
