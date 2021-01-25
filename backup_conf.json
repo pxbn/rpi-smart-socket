@@ -1,0 +1,22 @@
+{
+  "lights": [
+    {
+      "name": "Desk",
+      "code": "00000",
+      "id": "00100",
+      "groups": "Gruppe A&Gruppe B"
+    },
+    {
+      "name": "Bed",
+      "code": "00000",
+      "id": "00010",
+      "groups": "Gruppe A"
+    },
+    {
+      "name": "Plant",
+      "code": "00000",
+      "id": "10000",
+      "groups": ""
+    }
+  ]
+}
