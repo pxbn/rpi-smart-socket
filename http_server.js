@@ -5,7 +5,7 @@ const utils = require('./utils.js');
 const confHandler = require('./confHandler.js');
 
 const hostname = '0.0.0.0';
-const port = 3001;
+const port = 3000;
 const debug = process.argv.slice(2)[0] === '--debug';
 
 
@@ -14,13 +14,13 @@ const server = http.createServer((req, res) => {
     console.log("Device with IP" + req.connection.remoteAddress + " requested: " + req.url);
 
     //check if requesting device is permitted
-    //if (! (req.connection.remoteAdress ==  '192.168.178.23' || req.connection.remoteAddress == '192.168.178.118' || req.connection.remoteAddress == '192.168.178.28' || req.connection.remoteAddress == '192.168.178.24')) {
-    //    res.writeHead(404, {'Content-Type': 'text/plain; charset=utf-8'});
-    //    res.write('Hast gedacht cindy');
-    //    res.end();
-    //    console.log("Blocked request from IP " + req.connection.remoteAddress + " to: " + req.url);
-    //return;
-    //}
+    if (! (req.connection.remoteAdress ==  '192.168.178.23' || req.connection.remoteAddress == '192.168.178.118' || req.connection.remoteAddress == '192.168.178.28' || req.connection.remoteAddress == '192.168.178.24')) {
+        res.writeHead(404, {'Content-Type': 'text/plain; charset=utf-8'});
+        res.write('Hast gedacht cindy');
+        res.end();
+        console.log("Blocked request from IP " + req.connection.remoteAddress + " to: " + req.url);
+	return;
+    }
 
     if (req.url.startsWith('/index.html', 0)) {
         //return main page
