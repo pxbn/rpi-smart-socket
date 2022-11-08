@@ -1,6 +1,6 @@
 A simple NodeJS server for toggeling 433Mhz radio sockets using a raspberry pi 4 with a 433MHz transmitter connected with GPIO. 
 
-# How to use http to communicate with the server
+# API Documentation:
 ## Reset conf to backup_conf.json
 
 If you want to reset your configuration file with the backup_conf.json simply query the following:
